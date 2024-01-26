@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>posicionamento</title>
+    <title>fundo fixo de tela</title>
     <style>
        body {
         height: 100vh;
-        background-color: black;
+        /*background-color: black;
         background-image: url(imagens/wallpaper002.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; /*ocupa 100% da imagem e nao perde a qualidade conforme diminui a tela, perde apenas algumas partes da imagem por diminuir a tela.*/
 
         /*background-size: da em 100px ou em 100% ou contain mostra 100% da imagem.*/
+        /*background-attachment: fixed;*/
+
+        /*Shorthand > background > color > image
+        >position > repeat > [size] > attachment*/
+
+        background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+        background-size: cover;
        }
 
        main {
         background-color: white;
-        width: 400px;
+        max-width: 400px; /*tamanho maximo que seu site ira aparecer em qualquer tela.*/
         padding: 10px;
         margin: auto;
         border: 1px solid darkblue; 
@@ -30,7 +37,9 @@
 <body> 
     <main>
         <h1>teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, necessitatibus fugit! Dolores ipsa dicta libero saepe, ea sed similique deserunt excepturi, illo facilis neque tenetur, totam placeat possimus cupiditate commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, architecto. Ut pariatur ratione culpa placeat inventore debitis, et aliquid excepturi quod ex libero ducimus earum molestias, vero repudiandae qui dignissimos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime suscipit animi pariatur quo perspiciatis repellendus qui illo numquam dicta corrupti! Tempore, eius ipsa temporibus tempora veniam fugiat error odio eaque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, necessitatibus fugit! Dolores ipsa dicta libero saepe, ea sed similique deserunt excepturi, illo facilis neque tenetur, totam placeat possimus cupiditate commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, architecto. Ut pariatur ratione culpa placeat inventore debitis, et aliquid excepturi quod ex libero ducimus earum molestias, vero repudiandae qui dignissimos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime suscipit animi pariatur quo perspiciatis repellendus qui illo numquam dicta corrupti! Tempore, eius ipsa temporibus tempora veniam fugiat error odio eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo quam nulla? Expedita ab quisquam ipsa, dignissimos laudantium nihil, ex quidem fuga, dolores placeat suscipit rerum nisi reiciendis a maxime? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dolorum sint, dignissimos quo illo consectetur! Reiciendis voluptatem aspernatur, necessitatibus ipsa earum fugit consectetur dicta iusto, quaerat mollitia nobis repellendus odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi cum voluptas voluptatum nulla tempore reprehenderit nihil sapiente qui eos iure veniam quidem quo, beatae quasi dolor! Deserunt illum eligendi enim.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, necessitatibus fugit! Dolores ipsa dicta libero saepe, ea sed similique deserunt excepturi, illo facilis neque tenetur, totam placeat possimus cupiditate commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, architecto. Ut pariatur ratione culpa placeat inventore debitis, et aliquid excepturi quod ex libero ducimus earum molestias, vero repudiandae qui dignissimos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime suscipit animi pariatur quo perspiciatis repellendus qui illo numquam dicta corrupti! Tempore, eius ipsa temporibus tempora veniam fugiat error odio eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo quam nulla? Expedita ab quisquam ipsa, dignissimos laudantium nihil, ex quidem fuga, dolores placeat suscipit rerum nisi reiciendis a maxime? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dolorum sint, dignissimos quo illo consectetur! Reiciendis voluptatem aspernatur, necessitatibus ipsa earum fugit consectetur dicta iusto, quaerat mollitia nobis repellendus odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi cum voluptas voluptatum nulla tempore reprehenderit nihil sapiente qui eos iure veniam quidem quo, beatae quasi dolor! Deserunt illum eligendi enim.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, necessitatibus fugit! Dolores ipsa dicta libero saepe, ea sed similique deserunt excepturi, illo facilis neque tenetur, totam placeat possimus cupiditate commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, architecto. Ut pariatur ratione culpa placeat inventore debitis, et aliquid excepturi quod ex libero ducimus earum molestias, vero repudiandae qui dignissimos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime suscipit animi pariatur quo perspiciatis repellendus qui illo numquam dicta corrupti! Tempore, eius ipsa temporibus tempora veniam fugiat error odio eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illo quam nulla? Expedita ab quisquam ipsa, dignissimos laudantium nihil, ex quidem fuga, dolores placeat suscipit rerum nisi reiciendis a maxime? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dolorum sint, dignissimos quo illo consectetur! Reiciendis voluptatem aspernatur, necessitatibus ipsa earum fugit consectetur dicta iusto, quaerat mollitia nobis repellendus odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi cum voluptas voluptatum nulla tempore reprehenderit nihil sapiente qui eos iure veniam quidem quo, beatae quasi dolor! Deserunt illum eligendi enim.</p>
     </main>
 </body>
 </html>
