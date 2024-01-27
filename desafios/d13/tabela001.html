@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse; /*colocar a borda colada, no caso as linhas.*/
+            border: 5px solid red; /*bordar em volta*/
+        }
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px; /*epaçamento da tebela*/
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>minha primeira tabela</h1>
+    <!---
+        hierarquia de tabela (simples)
+        table = tabela
+            table row = linha de tabela
+                table header = cabeçalho de tabela
+                table data = dado de tabela 
+    obs.: tr sao linhas
+    -->
+    <table>
+        
+        <tr> <!--primeira linha-->
+            <td>a1
+            <td>b1
+            <td>c1
+
+        <tr class="linha"> 
+            <td>a2
+            <td>b2
+            <td>c2
+
+        <tr>
+            <td>a3</td>
+            <td>b3</td>
+            <td>c3</td>
+        </tr>
+
+        <tr>
+            <td>a4</td>
+            <td class="dado">b4</td>
+            <td>c4</td>
+        </tr>
+    </table>
+</body>
+</html>
