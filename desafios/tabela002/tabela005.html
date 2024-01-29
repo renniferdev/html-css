@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque{
+            background-color: aqua;
+        }
+
+        col.cnome {
+            background-color: aquamarine;
+        }
+
+        col.csexo {
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabela</h1>
+
+    <table>
+        <colgroup> <!--agrupa e consegue colorir a coluna por inteiro.-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col"> nome</th>
+            <th scope="col"> sexo</th>
+            <th scope="col"> idade</th>
+            <th scope="col"> profissao</th>
+        </tr>
+        <tr>
+            <td>ana maria</td>
+            <td>f</td>
+            <td>25</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>carla</td>
+            <td>f</td>
+            <td>26</td>
+            <td>professora</td>
+        </tr>
+        <tr>
+            <td>julia</td>
+            <td>f</td>
+            <td>22</td>
+            <td>programadora</td>
+        </tr>
+    </table>
+</body>
+</html>

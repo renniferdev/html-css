@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title> 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse ;
+            position: relative; /*nao muda nada, so conf comportamental.*/
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /*efeito rolagem com o titulo acompanhando.*/
+            top: -1px;
+            background-color:  #383838;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(255, 255, 255);
+        }
+
+        tbody > tr:nth-child(even) /*de 2 em 2 muda de cor obs nth-child(odd) comando para linha seguir diferent a sequencia.*/ {
+            background-color: lightgray;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        anatomia para tabelas grander 
+        table
+            caption
+            thead
+                tr, td, th
+            tbooy
+                tr, td, th
+            tfoot
+                tr, td, th
+        obs.: td dado e th titulo.
+            -->
+        <table>
+            <caption>pupolação das unidades federatias</caption>
+            <thead>
+                <tr>
+                    <th scope="col">estado</th>
+                    <th scope="col" style="width: 50px;">população</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>rio de janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">total de habitantes</th>
+                    <td class="num"><stron>0000</stron></td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. </p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vitae, iste voluptate velit blanditiis magnam asperiores illum dolorem magni ab provident eaque in quo ipsam, officia corrupti repellat maxime quaerat.</p>
+</body>
+</html>
