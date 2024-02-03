@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p>
+        <label for="iusu">Usuario *</label>
+        <input type="text" name="iusu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuario" autocomplete="username">
+    </p>
+    <p>
+        <label for="isen">senha *</label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="minimo 8 letras" autocomplete="current-password"> <!--required impede do usuario enviar o dado vazio sem preencher-->
+    </p>
+    <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </p>
+</body>
+</html>
+
+<!--name é importante pra html e php.
+    id é importante pra label e com javascript 
+    
+    size é o tamanho da caixa para preencher os dados
+
+    placeholder é dica do que e como se deve preencher o campo
+    
+    autocomplete="off" nao deixa salvo os dados que voce ja digitou. 
+    
+    current-password sugere uma senha ao usuario.-->

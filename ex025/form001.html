@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    
+    <style>
+        * {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete apaga os dados que aparecem salvo dos nomes que voce ja digitou.-->
+        <p>
+            <label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p>
+            <label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenomesobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+</body>
+</html>
+<!--comando label criou uma relacao entre o nome e a caixa para preencher o nome.-->
+
+<!--formulario com method post ainda assim nao proteje o seu dado pois la em inspecionar e network da pra ve o dado que voce mandou para o formulario-->
+
+<!--https voce precisa estudar para saber esconder os dados. https segurança dos seus dados-->
+
+<!--get usar para dados que nao precisam de segurança-->
+
+<!--post para envio de arquivos-->
