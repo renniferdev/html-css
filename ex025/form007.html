@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 7</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro2.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- escolha ---</option>
+                <optgroup label="Regiao Sudeste"> <!--label atributo label elemento-->
+                    <option value="MG">minas gerais</option>
+                    <option value="SP">sao paulo</option>
+                    <option value="RJ">rio de janeiro</option>
+                </optgroup>
+
+
+                <optgroup label="regiao nordeste">
+                    <option value="MM">maranhao</option>
+                    <option value="PE">pernambuco</option>
+                    <option value="RN">rio grande do norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">profissao:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">administrador</option>
+                <option value="cont">contabilista</option>
+                <option value="dev">desenvolvedor</option>
+                <option value="prof">professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="img">mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!--e legal colocar post tambem porque a mensagem pode exceder o limite de  3000 mil bit, se passar ele nao envia os dados.-->
+</body>
+</body>
+</html>
