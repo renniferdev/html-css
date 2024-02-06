@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            border: 20px solid rgb(199, 37, 37);
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro2.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="2" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <!--Estudar mais sobre RegEx-->
+            <p>
+                <label for="itel">telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+            
+        </fieldset>
+
+            <!--fieldset coloca borda em volta para separar os dados exp dados de familia, dados de escolaridade, dados financeiro ai cada um fica dentro de uma borda. -->    
+
+            <!--jeito de faze expressoes regulares... pattern="^[0-9]{4}-[0-9]{4}$"
+            
+            pattern="^\d{4,5}-\d{4}$" esse é de 4 a 5 digito o inicio do numero.
+
+            pattern="^\(\d{2}\)\d{4,5}-\d{4}$" esse coloca o dd, pelo motivo do inicio esta indicando que tem 2 numeros dentro de ()
+            -->
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</body>
+</html>
