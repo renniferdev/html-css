@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1> meu site</h1>
+        <div class="burguer" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"  class="material-icons" onclick="clickMenu()"> menu
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </div>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opcao 1</a></li>
+                <li><a href="#">opcao 2</a></li>
+                <li><a href="#">opcao 3</a></li>
+                <li><a href="#">opcao 4</a></li>
+                <li><a href="#">opcao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>testando media queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique incidunt labore exercitationem quia beatae. Non deleniti neque, blanditiis, quibusdam ad cupiditate quam ut alias amet odit at quae soluta placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde officia dolores recusandae consequuntur omnis veritatis error eius aspernatur et non reiciendis, provident perferendis illo laudantium dolorum quidem laboriosam culpa.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dignissimos mollitia debitis! Repellat neque quia omnis? Distinctio dolor deleniti quas excepturi error iusto repellat libero quia. Deleniti atque ex eius.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptas. Animi numquam modi tempore fugit asperiores nesciunt voluptatem at voluptas? Nostrum ex impedit sequi et delectus. Explicabo tempore aperiam architecto!</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() { /*teste de largura do site*/
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block' /*mostrar em bloco se a tela for grande.*/
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+
+        function clickMenu () { /*teste se esta exibindo ou não*/
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
